@@ -8,18 +8,10 @@
     <div>
         <HeroSection />
     </div>
+    <div class="relative !z-[5]">
+        <section-divider number="01." title="About me"/>
+    </div>
 </template>
 <script>
-export default {
-  head: {
-    title: 'Home page',
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Home page description'
-      }
-    ],
-  }
-}
+export default {}
 </script>
