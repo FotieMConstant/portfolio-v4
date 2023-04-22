@@ -1,10 +1,12 @@
 <template>
     <!-- hero -->
-    <div class="text-xl font-bold tracking-wide __text-green-linear-600 lg:text-3xl">
+<div class="relative !z-[5]">
+  <div class="!z-[5] relative text-xl font-bold tracking-wide lg:text-3xl">
      <img src="https://user-images.githubusercontent.com/42372656/232194049-b3ae2f4b-7601-46ef-8581-80b1ba16cf4a.svg" alt="">
-    </div>
-    <div class="mt-20">
-        <img class="h-14 rounded-full __border-green-linear-600" src="https://avatars.githubusercontent.com/u/42372656?v=4" alt="" srcset="">
+  </div>
+  <div class="mt-20">
+     <div class="">
+      <img class="h-14 rounded-full __border-green-linear-600" src="https://avatars.githubusercontent.com/u/42372656?v=4" alt="" srcset="">
        <div class="mt-2">
         <div class="text-3xl font-bold tracking-wide text-white lg:text-5xl">
           <h1>Hi there 👋🏾</h1> 
@@ -41,29 +43,58 @@
           Questions and answers
         </div>
        </div>
-       <div class="absolute right-44 top-12">
+     </div>
+     <!-- reviews from students -->
+       <div class="absolute right-44 top-5">
         <cards-StudentTestimonialCard 
         avatar="https://process.filestackapi.com/cache=expiry:max/resize=width:72/lO27N9pOTYS0sH2Yxes9"
         name="Miguel Fernando"
         fromWhere="Codementor student"
         review="Fotie was incredibly helpful and willing to make sure that he solved my issue before taking the job. He also did a ton of work in good will to make sure I was satisfied. Thanks Fotie!"/>
       </div>
-      <div class="absolute right-12 top-[280px]">
+      <div class="absolute right-12 top-[210px]">
       <cards-StudentTestimonialCard
         avatar="https://process.filestackapi.com/cache=expiry:max/resize=width:72/eMbDrY3VSVGZbS34GjoG"
         name="Amr Al"
         fromWhere="Codementor student"
         review="Fotie takes an analytical approach to the task where he also walks you through the process, will contact again for other tasks. great work."/>
       </div>
-      <div class="absolute right-60 top-[490px]">
+      <div class="absolute right-60 top-[387px]">
       <cards-StudentTestimonialCard
         avatar="https://process.filestackapi.com/cache=expiry:max/resize=width:72/v1iR576KRoWUL0bo5c6D"
         name="Yuchen"
         fromWhere="Codementor student"
         review="Fotie is a great mentor. He explained notions clearly and patiently with different examples. Enjoyed the session with him!"/>
       </div>
+     <!-- reviews from students -->
+     <!-- codementor badge section -->
+     <div class="">
+      <div class="flex space-x-2 text-gray-300 mt-4">
+        <svg class="h-6" fill="currentColor" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="11.52"></g><g id="SVGRepo_iconCarrier"> <path d="M960 15 693.227 257.027 333.44 243.053 284.693 599.96 0 820.547l192 304.64-76.267 352 342.934 109.973 167.893 318.613L960 1769.56l333.44 136.213 167.893-318.613 342.934-109.973-76.267-352 192-304.64-284.693-220.587-48.747-356.907-359.893 13.974L960 15Zm352.747 616.427 147.84 153.813-600 577.28-402.774-402.773L608.64 808.92l254.933 254.827 449.174-432.32Z" fill-rule="evenodd"></path> </g></svg>
+        <div class="">Certified Codementor</div>
+      </div>
+      <div class="mt-3">
+        <a href="https://www.codementor.io/@fotiemconstant?refer=badge" target="_BLANK"><img src="https://www.codementor.io/m-badges/fotiemconstant/find-me-on-cm-g.svg" alt="Codementor badge"></a>
+      </div>
+     </div>
+    <!--/ codementor badge section -->
+    <!-- study with me section -->
+    <div class="text-white mt-5">
+      <div class="text-2xl font-bold">
+        Come Study With Me
+      </div>
+      <div class="text-base font-monospace w-96 text-gray-400">
+        I will teach you <span class="__text-green-linear-600">Javascript, Python, Node.js, HTML/CSS, Nuxt.js,</span>and more.
+      </div>
     </div>
+    <!--/ study with me section -->
+  </div>
+</div>
     <!-- end hero -->
+    <!-- bg overlay -->
+    <!-- <div class="bg-gray-900 opacity-30 w-full h-[700px] top-12 right-0 absolute z-[0]"></div> -->
+   <svg class="opacity-30 w-full h-[700px] -top-9 right-0 absolute z-[0]" id="visual" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 55L13.7 50.5C27.3 46 54.7 37 82 39.3C109.3 41.7 136.7 55.3 163.8 61.3C191 67.3 218 65.7 245.2 64.8C272.3 64 299.7 64 327 64.8C354.3 65.7 381.7 67.3 409 64.3C436.3 61.3 463.7 53.7 491 52.8C518.3 52 545.7 58 573 63.3C600.3 68.7 627.7 73.3 654.8 75.7C682 78 709 78 736.2 77.2C763.3 76.3 790.7 74.7 818 70.2C845.3 65.7 872.7 58.3 886.3 54.7L900 51L900 0L886.3 0C872.7 0 845.3 0 818 0C790.7 0 763.3 0 736.2 0C709 0 682 0 654.8 0C627.7 0 600.3 0 573 0C545.7 0 518.3 0 491 0C463.7 0 436.3 0 409 0C381.7 0 354.3 0 327 0C299.7 0 272.3 0 245.2 0C218 0 191 0 163.8 0C136.7 0 109.3 0 82 0C54.7 0 27.3 0 13.7 0L0 0Z" fill="#363636"></path><path d="M0 127L13.7 119.5C27.3 112 54.7 97 82 99.3C109.3 101.7 136.7 121.3 163.8 128.8C191 136.3 218 131.7 245.2 127.8C272.3 124 299.7 121 327 118.8C354.3 116.7 381.7 115.3 409 115.3C436.3 115.3 463.7 116.7 491 119.7C518.3 122.7 545.7 127.3 573 133.3C600.3 139.3 627.7 146.7 654.8 148.2C682 149.7 709 145.3 736.2 137.8C763.3 130.3 790.7 119.7 818 121.2C845.3 122.7 872.7 136.3 886.3 143.2L900 150L900 49L886.3 52.7C872.7 56.3 845.3 63.7 818 68.2C790.7 72.7 763.3 74.3 736.2 75.2C709 76 682 76 654.8 73.7C627.7 71.3 600.3 66.7 573 61.3C545.7 56 518.3 50 491 50.8C463.7 51.7 436.3 59.3 409 62.3C381.7 65.3 354.3 63.7 327 62.8C299.7 62 272.3 62 245.2 62.8C218 63.7 191 65.3 163.8 59.3C136.7 53.3 109.3 39.7 82 37.3C54.7 35 27.3 44 13.7 48.5L0 53Z" fill="#242424"></path><path d="M0 307L13.7 299.5C27.3 292 54.7 277 82 267.3C109.3 257.7 136.7 253.3 163.8 261.7C191 270 218 291 245.2 283.5C272.3 276 299.7 240 327 227.2C354.3 214.3 381.7 224.7 409 223.2C436.3 221.7 463.7 208.3 491 225.7C518.3 243 545.7 291 573 312C600.3 333 627.7 327 654.8 321C682 315 709 309 736.2 304.5C763.3 300 790.7 297 818 292.5C845.3 288 872.7 282 886.3 279L900 276L900 148L886.3 141.2C872.7 134.3 845.3 120.7 818 119.2C790.7 117.7 763.3 128.3 736.2 135.8C709 143.3 682 147.7 654.8 146.2C627.7 144.7 600.3 137.3 573 131.3C545.7 125.3 518.3 120.7 491 117.7C463.7 114.7 436.3 113.3 409 113.3C381.7 113.3 354.3 114.7 327 116.8C299.7 119 272.3 122 245.2 125.8C218 129.7 191 134.3 163.8 126.8C136.7 119.3 109.3 99.7 82 97.3C54.7 95 27.3 110 13.7 117.5L0 125Z" fill="#131313"></path><path d="M0 343L13.7 343C27.3 343 54.7 343 82 342.3C109.3 341.7 136.7 340.3 163.8 341.2C191 342 218 345 245.2 329.2C272.3 313.3 299.7 278.7 327 271.2C354.3 263.7 381.7 283.3 409 290.2C436.3 297 463.7 291 491 303.7C518.3 316.3 545.7 347.7 573 364.2C600.3 380.7 627.7 382.3 654.8 374.8C682 367.3 709 350.7 736.2 349.2C763.3 347.7 790.7 361.3 818 365.8C845.3 370.3 872.7 365.7 886.3 363.3L900 361L900 274L886.3 277C872.7 280 845.3 286 818 290.5C790.7 295 763.3 298 736.2 302.5C709 307 682 313 654.8 319C627.7 325 600.3 331 573 310C545.7 289 518.3 241 491 223.7C463.7 206.3 436.3 219.7 409 221.2C381.7 222.7 354.3 212.3 327 225.2C299.7 238 272.3 274 245.2 281.5C218 289 191 268 163.8 259.7C136.7 251.3 109.3 255.7 82 265.3C54.7 275 27.3 290 13.7 297.5L0 305Z" fill="#111111"></path><path d="M0 451L13.7 451C27.3 451 54.7 451 82 451C109.3 451 136.7 451 163.8 451C191 451 218 451 245.2 451C272.3 451 299.7 451 327 451C354.3 451 381.7 451 409 451C436.3 451 463.7 451 491 451C518.3 451 545.7 451 573 451C600.3 451 627.7 451 654.8 451C682 451 709 451 736.2 451C763.3 451 790.7 451 818 451C845.3 451 872.7 451 886.3 451L900 451L900 359L886.3 361.3C872.7 363.7 845.3 368.3 818 363.8C790.7 359.3 763.3 345.7 736.2 347.2C709 348.7 682 365.3 654.8 372.8C627.7 380.3 600.3 378.7 573 362.2C545.7 345.7 518.3 314.3 491 301.7C463.7 289 436.3 295 409 288.2C381.7 281.3 354.3 261.7 327 269.2C299.7 276.7 272.3 311.3 245.2 327.2C218 343 191 340 163.8 339.2C136.7 338.3 109.3 339.7 82 340.3C54.7 341 27.3 341 13.7 341L0 341Z" fill="#0f0f0f"></path></svg>
+    <!-- /bg overlay -->
   </template>
   <script>
   export default {

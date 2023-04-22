@@ -1,5 +1,6 @@
 <template>
-    <div class="text-white bg-gray-700 shadow- shadow-black rounded-lg w-full p-5">
+  <div class="__gradient-border top-0 w-full scale-75 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-90 duration-300 cursor-pointer">
+     <div class="text-white bg-gray-700 hover:bg-gray-600 rounded-lg w-full p-5 ">
       <div class="flex space-x-3 mb-3">
         <img class="rounded-full h-8" :src="avatar" alt="">
         <div>
@@ -16,6 +17,7 @@
           </div>
       </div>
     </div>
+  </div>
   </template>
 <script>
 export default {
@@ -47,4 +49,45 @@ export default {
 </script>
   
 <style scoped>
+.__box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+.__gradient-border {
+  --borderWidth: 3px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.__gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #FFDB18, #131313, #B8E755);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 </style>
