@@ -19,7 +19,7 @@ v4
   </a>
 </p>
 
-![demo](https://user-images.githubusercontent.com/42372656/232194207-15ede500-c7f6-4824-90f3-7f2e831d78f0.png)
+![demo](https://user-images.githubusercontent.com/42372656/233796711-d087eec5-6ba2-4077-ae90-10b48584cf54.png)
 
 ## 🚨 Forking this repo (please read!)
 I have received numerous inquiries from people who are interested in using this code for their own website, and the short answer to that question is usually **yes, with attribution**.
