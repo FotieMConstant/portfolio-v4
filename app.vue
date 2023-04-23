@@ -21,5 +21,5 @@ box-sizing: border-box;
 }
 body{
   @apply bg-gray-900 text-white h-screen sm:px-10 px-6 py-6 w-fit;
-}
+} 
 </style>
